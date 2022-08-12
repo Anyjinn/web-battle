@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            background-color: #b72a67;
+            height: 100vh;
+            width: 100wh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .miniContainer {
+            position: absolute;
+            left: 0;
+            background-color: #8d2050;
+            height: 100vh;
+            width: 180px;
+        }
+
+        .cont {
+            background-color: #8d2050;
+            width: 180px;
+            height: 170px;
+        }
+
+        .miniCont {
+            background-color: blck;
+            width: 50px;
+            height: 50px;
+
+            /* transition: 2s, linear; */
+            padding-top: 3px;
+        }
+
+        .text {
+            color: white;
+            font-size: small;
+            position: absolute;
+            left: 90px;
+            top: 30px;
+            /* visibility: hidden; */
+
+
+        }
+
+        .bar {
+            height: 5px;
+            width: 35px;
+            background-color: white;
+            margin: 10px auto;
+            box-shadow: 0px 5px 50px 5px gray;
+        }
+
+        .miniCont:hover .top {
+            transform: translateY(15px) rotateZ(45deg);
+            transition: 0.8s linear;
+        }
+
+        .miniCont:hover .bottom {
+            transform: translateY(-15px) rotateZ(-45deg);
+            transition: 0.8s linear;
+        }
+
+        .miniCont:hover .middle {
+            width: 0px;
+            transition: 0.8s linear;
+        }
+
+        .text-one:hover {
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            width: 80px;
+        }
+
+        .text-two:hover {
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            width: 80px;
+        }
+
+        .text-three:hover {
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            width: 80px;
+        }
+
+        .miniCont:hover+.text {
+            /* visibility: visible; */
+            animation: nigga 1.3s linear 1;
+        }
+
+        @keyframes nigga {
+            from {
+                left: 60px;
+                top: 30px;
+                opacity: 0.001;
+
+            }
+
+            to {
+                left: 90px;
+                top: 30px;
+            }
+        }
+
+        .yes {
+            display: flex;
+            width: 70%;
+            height: 80%;
+    
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .child-1 {
+            height: 100%;
+            width: 70%;
+        }
+
+        .child-2 {
+            height: 100%;
+            width: 30%;
+        }
+
+        .z1 {
+            height: 40%;
+            width: 100%;
+        }
+
+        .z2 {
+            height: 100%;
+            width: 60%;
+        }
+
+        .z3 {
+            height: 100%;
+            width: 40%;
+        }
+        .z4 {
+            height: 30%;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .alim{
+            height: 30%;
+            
+        }
+
+        .z5{
+            height: 70%;
+            width: 100%;
+        }
+
+        .z6{
+            height: 30%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="miniContainer">
+            <div class="cont">
+
+                <div class="miniCont">
+                    <div class="bar top"></div>
+                    <div class="bar middle"></div>
+                    <div class="bar bottom"></div>
+
+                </div>
+                <div class="text tbbo">
+                    <p class="text-one">Namuun</p>
+                    <p class="text-two">Dulguun</p>
+                    <p class="text-three">Chuka</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="yes row">
+
+            <div class="column child-1 ">
+                <div class="z1"><img src="https://pbs.twimg.com/media/Ecp0HuMUcAca0xW.jpg"
+                        alt="a" />
+                </div>
+                <div class="row alim">
+                    <div class="z2"><img src="https://pbs.twimg.com/media/EoytbA1UYAAHp7S.jpg:large" alt="b" /></div>
+                    <div class="z3">
+                        <img src="https://static.wikia.nocookie.net/studio-ghibli/images/2/2a/Calcifer.png/revision/latest?cb=20110705204516"
+                            alt="c" />
+                    </div>
+                </div>
+                <div class="z4"><img src="https://static.zerochan.net/Markl.full.3162758.jpg" alt="d" /></div>
+            </div>
+            <div class="column child-2">
+                <div class="z5">
+                    <img src="https://play-lh.googleusercontent.com/jVswhiXbnSh1bK8RXVbdSHV117R-xjoYLmeMyTXhyAhKiM4MKd_5kVWh6lAHVlf-g1wAFMq8QmaSk1ZAAMY=w240-h480-rw"
+                        alt="e" />
+                </div>
+                <div class="z6">
+                    <img src="https://static.wikia.nocookie.net/studio-ghibli/images/e/e7/Turnip-Head-In-Howls-Moving-Castle.jpg/revision/latest?cb=20210707050624"
+                        alt="f" />
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
